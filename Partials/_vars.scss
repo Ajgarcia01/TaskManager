@@ -1,0 +1,32 @@
+///@name Variables
+/// Partial utilizado con la paleta de colores de la página y modo oscuro
+/// @author JGL
+
+/// Lista de colores para utilizarla con un for y establecerlos en distintos titulos
+///@type Array
+$list :  #ff0000, #02ca1d,  #c08b04 , #2b00ff;
+
+///@type String
+$color__primary: #ffffff;
+///@type String
+$color__secondary: #c3c3c3;
+///@type String
+$color__text: #000;
+
+///@type String
+$color__primary--dark: #2c2c2c;
+///@type String
+$color__text--dark: #FFFFFA;
+
+
+
+.dark{
+  background-color: $color__primary--dark;
+  color: $color__text--dark;
+}
+
+.dark .section{
+  background-color: $color__primary--dark;
+  color: $color__text--dark;
+}
+    

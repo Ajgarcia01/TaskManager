@@ -1,0 +1,36 @@
+
+///@name Section
+/// Partial que vamos a utilizar para el cajon llamado secion
+/// @require @import "./vars.scss";
+/// @author JGL
+@import "./Partials/vars.scss";
+
+
+.linea {
+  border-top: 1px solid black;
+  height: 2px; }
+
+.section {
+  padding: 0px;
+  margin-top: 20px; 
+  color: $color__text;
+}
+  .section .section__list {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  .section .left, .section .right {
+    vertical-align: top;
+    display: inline-block;
+    width: 39%; }
+  .section .left {
+    margin-right: 100px; }
+  .section .name {
+    font-weight: bold; }
+  .section .section__list-item {
+    margin-top: 15px; }
+  .section .skills {
+    margin-top: 15px; }
+
+
+        
+

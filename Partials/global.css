@@ -1,0 +1,351 @@
+.dark {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark .section {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark .section {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark .section {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark .section {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.container {
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding: 50px 50px 150px;
+  margin: 0px 450px;
+  background-color: #c3c3c3;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  size: 90%;
+  align-content: center;
+}
+
+.separator {
+  height: 20px;
+  display: inline-block;
+  border-left: 1px solid #000000;
+  margin: 0px 10px;
+}
+
+.header .full-name {
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.header .contact-info {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.header .contact-info .separator {
+  color: red;
+}
+
+.header .about {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.section-title-1 {
+  color: #ff0000;
+}
+
+.section-title-2 {
+  color: #02ca1d;
+}
+
+.section-title-3 {
+  color: #c08b04;
+}
+
+.section-title-4 {
+  color: #2b00ff;
+}
+
+.toggleWrapper {
+  position: absolute;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 200px;
+  margin-left: 540px;
+  margin-top: 50px;
+  transform: translate3d(-50%, -50%, 0);
+  color: white;
+}
+
+.toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 50px;
+  background-color: #83d8ff;
+  border-radius: 84px;
+  transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.toggle:before {
+  content: "Light";
+  position: absolute;
+  left: -50px;
+  top: 15px;
+  font-size: 18px;
+}
+
+.toggle:after {
+  content: "Dark";
+  position: absolute;
+  right: -48px;
+  top: 15px;
+  font-size: 18px;
+  color: #232325;
+}
+
+.toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  width: 44px;
+  height: 44px;
+  background-color: #ffcf96;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-45deg);
+}
+
+.toggle__handler .crater {
+  position: absolute;
+  background-color: #e8cda5;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  border-radius: 100%;
+}
+
+.toggle__handler .crater--1 {
+  top: 18px;
+  left: 10px;
+  width: 4px;
+  height: 4px;
+}
+
+.toggle__handler .crater--2 {
+  top: 28px;
+  left: 22px;
+  width: 6px;
+  height: 6px;
+}
+
+.toggle__handler .crater--3 {
+  top: 10px;
+  left: 25px;
+  width: 8px;
+  height: 8px;
+}
+
+.star {
+  position: absolute;
+  background-color: #fff;
+  transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  border-radius: 50%;
+}
+
+.star--1 {
+  top: 10px;
+  left: 35px;
+  z-index: 0;
+  width: 30px;
+  height: 3px;
+}
+
+.star--2 {
+  top: 18px;
+  left: 28px;
+  z-index: 1;
+  width: 30px;
+  height: 3px;
+}
+
+.star--3 {
+  top: 27px;
+  left: 40px;
+  z-index: 0;
+  width: 30px;
+  height: 3px;
+}
+
+.star--4, .star--5, .star--6 {
+  opacity: 0;
+  transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.star--4 {
+  top: 16px;
+  left: 11px;
+  z-index: 0;
+  width: 2px;
+  height: 2px;
+  transform: translate3d(3px, 0, 0);
+}
+
+.star--5 {
+  top: 32px;
+  left: 17px;
+  z-index: 0;
+  width: 3px;
+  height: 3px;
+  transform: translate3d(3px, 0, 0);
+}
+
+.star--6 {
+  top: 36px;
+  left: 28px;
+  z-index: 0;
+  width: 2px;
+  height: 2px;
+  transform: translate3d(3px, 0, 0);
+}
+
+input:checked + .toggle {
+  background-color: #262323;
+}
+
+input:checked + .toggle:before {
+  color: #ffffff;
+}
+
+input:checked + .toggle:after {
+  color: #7f7f7f;
+}
+
+input:checked + .toggle .toggle__handler {
+  background-color: #ffe5b5;
+  transform: translate3d(40px, 0, 0) rotate(0);
+}
+
+input:checked + .toggle .toggle__handler .crater {
+  opacity: 1;
+}
+
+input:checked + .toggle .star--1 {
+  width: 2px;
+  height: 2px;
+}
+
+input:checked + .toggle .star--2 {
+  width: 4px;
+  height: 4px;
+  transform: translate3d(-5px, 0, 0);
+}
+
+input:checked + .toggle .star--3 {
+  width: 2px;
+  height: 2px;
+  transform: translate3d(-7px, 0, 0);
+}
+
+input:checked + .toggle .star--4, input:checked + .toggle .star--5, input:checked + .toggle .star--6 {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+input:checked + .toggle .star--4 {
+  transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+input:checked + .toggle .star--5 {
+  transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+input:checked + .toggle .star--6 {
+  transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.container p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.dark {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.dark .section {
+  background-color: #2c2c2c;
+  color: #FFFFFA;
+}
+
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+}
+
+.section {
+  padding: 0px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.section .section__list {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.section .left, .section .right {
+  vertical-align: top;
+  display: inline-block;
+  width: 39%;
+}
+
+.section .left {
+  margin-right: 100px;
+}
+
+.section .name {
+  font-weight: bold;
+}
+
+.section .section__list-item {
+  margin-top: 15px;
+}
+
+.section .skills {
+  margin-top: 15px;
+}/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,21 @@
+/// @output Pondremos los margemos del objeto que contenga este mixin a 0
+/// @author JGL
+/// @example .margen h1 {@include reset;}
+@mixin reset{
+    margin: 0;
+}
+    
+
+/// Con esta función vamos a centrar cualquier objeto de la página
+/// @param {Integer} $margintop - Margen superior del objeto 
+/// @param {Integer} $marginbot - Margen inferior del objeto
+/// @param {Integer} $size - Tamaño del objeto
+/// @output Centramos el objeto con los parametros que le hayamos pasado
+/// @example  @include centrado(22px,30px,20%);
+/// @author JGL
+@mixin centrado ($margintop,$marginbot,$size){
+    margin-top: $margintop;
+    margin-bottom: $marginbot;
+    size: $size;
+    align-content: center;
+}

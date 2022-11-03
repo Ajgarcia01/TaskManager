@@ -1,0 +1,15 @@
+///@name Functions
+/// Partial que vamos a utilizar para declarar todas las funciones que vayamos a utilizar
+/// @author JGL
+@import "./Partials/vars.scss";
+
+/// Función para establecer un color en los titulos de las secciones
+/// @param {Integer} $posicion - Posicion del array de colores
+/// @example @include colorSectionTitle($i)
+/// @example $colores [2]= #fffff
+/// @return {String} - Devuelve una posicion del array, que en este caso, es un color en concreto
+/// @author JGL
+@function colorSectionTitle($posicion) {
+    $color:nth($list, $posicion);
+    @return $color;
+}
