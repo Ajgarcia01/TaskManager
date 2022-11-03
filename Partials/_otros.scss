@@ -3,9 +3,9 @@
 /// Por lo que se podria tratal como un parcial general con todas las demás clases de la página.
 /// @require @import "./vars.scss"; @import "./mixins.scss"; @import "./functions.scss";
 /// @author JGL
-@import "./Partials/vars.scss";
-@import "./Partials/mixins.scss";
-@import "./Partials/functions.scss";
+@import "vars.scss";
+@import "mixins.scss";
+@import "functions.scss";
 
 
 .container{
@@ -39,12 +39,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
   
 
-    @for $i from 1 through 4 {
-      .section-title-#{$i}{
-        @include colorSectionTitle($i)
-      }
-    }
-  
   .toggleWrapper {
     position: absolute;
     align-items: center;
